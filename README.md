@@ -17,11 +17,10 @@ node ./node_modules/.bin/tsc -b
 Observe that `declarations/b.d.ts` contains
 
 ```ts
-import { Foo } from "../projA";
-export type Bar = {
-  [Foo.A]: 1;
-  [Foo.B]: 2;
-};
+import { type Type } from "./a";
+
+export const foo = (_: Type): void => {};
+export const bar = (_: import("./a").Type): void => {};
 ```
 
 ## Test
@@ -35,5 +34,6 @@ node ./transpile.mjs tsconfig.json declarations
 Observe that `declarations/b.d.ts` contains
 
 ```ts
-export type Bar = {};
+export declare const foo: (_: Type) => void;
+export declare const bar: (_: any) => void;
 ```

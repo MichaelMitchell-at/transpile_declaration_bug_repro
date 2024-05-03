@@ -5,7 +5,7 @@
     "emitDeclarationOnly": true,
     "declaration": true,
     "outDir": "declarations",
-    "lib": ["es2015"],
+    "lib": ["es5", "es2015"]
   },
   "include": ["**/*.ts"]
 }

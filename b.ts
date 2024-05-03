@@ -1,6 +1,4 @@
-import {Foo} from './a';
+import { type Type } from "./a";
 
-export type Bar = {
-  [Foo.A]: 1;
-  [Foo.B]: 2;
-}
+export const foo = (_: Type): void => {};
+export const bar = (_: import("./a").Type): void => {};

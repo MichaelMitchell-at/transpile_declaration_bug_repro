@@ -1,4 +1,1 @@
-export enum Foo {
-  A = 'a',
-  B = 'b',
-}
+export interface Type {}
