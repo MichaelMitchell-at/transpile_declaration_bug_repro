@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "isolatedDeclarations": true,
+    "emitDeclarationOnly": true,
+    "declaration": true,
+    "outDir": "declarations",
+    "lib": ["es2015"],
+  },
+  "include": ["**/*.ts"]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "transpile_declaration_bug_repro",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "fs-extra": "11.2.0",
+    "typescript": "5.5.0-dev.20240501"
+  }
+}
